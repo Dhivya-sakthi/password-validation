@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <section>
+    
+        <div class="form-group">
+             <input type="password" placeholder="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+             <!-- <i class="fa-regular fa-eye show-password"></i> -->
+    
+            <label class="form-label">password</label>
+            <i class="fa-regular fa-eye show-password"></i>
+    
+           </div>
+           <div class="strength-meter" id="strength-meter"></div>
+           
+            
+        </section>
+        
+        <div id="message">
+            <p id="letter" class="invalid">Lowercase & Uppercase</p>
+            <p id="number" class="invalid">Number(0-9)</p>
+            <p id="special" class="invalid">Special Characters(!@#$%^&*)</p>
+            <p id="length" class="invalid">Atleast 8 Characters</p>
+        </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
